@@ -1,0 +1,8 @@
+{
+  "name": "ste-writing",
+  "description": "ASD-STE100 简化写作 + 反 AI 腔改写工具：改写 / 写作 / 体检三种模式，中英文通用",
+  "version": "0.2.0",
+  "author": {
+    "name": "Andrew Chay"
+  }
+}

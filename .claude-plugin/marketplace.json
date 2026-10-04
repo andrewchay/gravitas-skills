@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "andrewchay-gravitas-skills",
+  "description": "Andrew Chay's personal skill marketplace for Gravitas / Claude Code — writing style, productivity and domain skills",
+  "owner": {
+    "name": "Andrew Chay"
+  },
+  "plugins": [
+    {
+      "name": "ste-writing",
+      "description": "ASD-STE100 simplified writing + anti-AI-style rewriter. Based on ASD-STE100 Issue 9 (2025-01-15) core writing rules with a 12-point anti-AI-style checklist. Three modes: rewrite (zero information loss), write (BLUF drafting with self-check), audit (rule-by-row diagnosis). Works for both English and Chinese output.",
+      "author": {
+        "name": "Andrew Chay"
+      },
+      "category": "documentation",
+      "version": "0.2.0",
+      "source": "./plugins/ste-writing"
+    }
+  ]
+}
