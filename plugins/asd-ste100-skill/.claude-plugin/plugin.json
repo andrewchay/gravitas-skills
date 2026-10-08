@@ -1,0 +1,10 @@
+{
+  "name": "asd-ste100",
+  "description": "ASD-STE100 Simplified Technical English rules repurposed for rewriting agent-facing English — tool descriptions, error messages, inter-agent instructions, system prompts — so it cannot be misparsed. Strict / STE-flavored modes, before-after examples, and a Python linter. Vendored from danyuchn/asd-ste100-skill (MIT, v0.4.0).",
+  "version": "0.4.0",
+  "author": {
+    "name": "danyuchn",
+    "url": "https://github.com/danyuchn"
+  },
+  "homepage": "https://github.com/danyuchn/asd-ste100-skill"
+}

@@ -15,6 +15,16 @@ ASD-STE100 简化写作 + 反 AI 腔改写工具。
 - 三种模式：**改写**（信息零丢失重写）/ **写作**（BLUF 结构起草 + 自检）/ **体检**（逐条病灶诊断）
 - 中英文通用；官方规格对照：Part 1 共 9 节 53 条规则，词典 875 批准词 + 1274 非批准词
 
+### asd-ste100（v0.4.0，vendored 自第三方）
+
+> 来源：[danyuchn/asd-ste100-skill](https://github.com/danyuchn/asd-ste100-skill)（MIT，上游 commit `32511c6`，2026-10-04）
+
+- 面向**被 Agent/机器解析的英文**的去歧义改写：工具描述、报错信息、Agent 间指令、系统提示词
+- strict / STE-flavored 双模式 + before-after 示例 + `ste-lint.py` 检查脚本
+- 与 ste-writing 互补：asd-ste100 管机器可解析性（英文），ste-writing 管输出风格（中英文）
+- 遵守上游 IP 约定：只编码规则类别，不复制 ASD 官方词典
+- **上游同步**：上游更新后重新拷贝 `skills/asd-ste100/` 内容并同步更新 plugin.json / marketplace.json 的版本号
+
 ## 安装
 
 **Gravitas / Claude Code Marketplace：**
