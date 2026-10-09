@@ -27,6 +27,16 @@
       "version": "0.4.0",
       "source": "./plugins/asd-ste100-skill",
       "homepage": "https://github.com/danyuchn/asd-ste100-skill"
+    },
+    {
+      "name": "client-need-distillation",
+      "description": "Distills fragmented client communications (meeting speednotes, chat logs) into shippable, high-ROI AI pilot scenarios. Seven-stage loop: evidence audit → scenario cards → scenario map → client-first lens (service outcomes as primary metrics, internal FTE/hours demoted to secondary economics) → net-new services scan → N-role thought experiment (restructure the org into a client-facing agent network) → one-week quick win with execution card. Built from a real FDE engagement with a hazardous-chemical logistics company; works for any B2B AI-transformation discovery.",
+      "author": {
+        "name": "Andrew Chay"
+      },
+      "category": "consulting",
+      "version": "1.0.0",
+      "source": "./plugins/client-need-distillation"
     }
   ]
 }

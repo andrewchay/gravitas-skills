@@ -1,0 +1,8 @@
+{
+  "name": "client-need-distillation",
+  "description": "客户沟通速记蒸馏工作流：证据盘点 → 速记翻译成场景卡 → 场景地图排优先级 → 客户视角需求纠偏（服务结果主指标，内部效率次级）→ 新增服务扫描 → \"只留 N 个角色\"思想实验（组织重构为 client-facing Agent 网络）→ 一周快赢与执行卡",
+  "version": "1.0.0",
+  "author": {
+    "name": "Andrew Chay"
+  }
+}
