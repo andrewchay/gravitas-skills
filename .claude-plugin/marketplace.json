@@ -37,6 +37,42 @@
       "category": "consulting",
       "version": "1.0.0",
       "source": "./plugins/client-need-distillation"
+    },
+    {
+      "name": "huashu-nuwa",
+      "description": "女娲造人：输入人名/主题/甚至只是模糊需求，自动深度调研 → 思维框架提炼 → 生成可运行的人物 Skill。两种入口：明确人名直接蒸馏；模糊需求先诊断推荐再蒸馏。Vendored from alchaincyf/nuwa-skill (MIT).",
+      "author": {
+        "name": "alchaincyf (花叔)",
+        "url": "https://github.com/alchaincyf"
+      },
+      "category": "productivity",
+      "version": "1.0.0",
+      "source": "./plugins/huashu-nuwa",
+      "homepage": "https://github.com/alchaincyf/nuwa-skill"
+    },
+    {
+      "name": "huashu-art-motion",
+      "description": "艺术与视频动画：拆解复刻动画；代码画 35 种艺术风格并让画活；9 种解说动画语法，8 种可按口播参数渲片段；含口播整片参考代码及框景检查；人用 AI 生帧；可选已有录音、系统声音与语音复刻。Vendored from alchaincyf/huashu-art-motion (MIT).",
+      "author": {
+        "name": "alchaincyf (花叔)",
+        "url": "https://github.com/alchaincyf"
+      },
+      "category": "design",
+      "version": "1.0.0",
+      "source": "./plugins/huashu-art-motion",
+      "homepage": "https://github.com/alchaincyf/huashu-art-motion"
+    },
+    {
+      "name": "huashu-design",
+      "description": "花叔 Design：用 HTML 做高保真原型、幻灯片、动画、可视化与专家评审。任何新设计 100% 先出三个方向初稿给用户选（指定风格/品牌也不豁免），选定后才执行。触发词：做原型、PPT、幻灯片、动画、设计风格、评审、HTML 页面、UI mockup、导出 MP4/GIF。生产级 Web App / 需后端的系统不适用。Vendored from alchaincyf/huashu-design (MIT).",
+      "author": {
+        "name": "alchaincyf (花叔)",
+        "url": "https://github.com/alchaincyf"
+      },
+      "category": "design",
+      "version": "1.0.0",
+      "source": "./plugins/huashu-design",
+      "homepage": "https://github.com/alchaincyf/huashu-design"
     }
   ]
 }

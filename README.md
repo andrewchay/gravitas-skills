@@ -38,6 +38,38 @@ ASD-STE100 简化写作 + 反 AI 腔改写工具。
 - **一周快赢**：一周内可落地 + ROI 一周内可观测 + client-facing 优先；一周只赌一个，赌赢滚动
 - 源自危化品物流公司 FDE 实战，适用于任意 B2B AI 改造 / FDE 项目的需求梳理
 
+### huashu-nuwa（v1.0.0，vendored 自第三方）
+
+> 来源：[alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill)（MIT，上游 commit `fe03746`，2026-08-25）
+
+女娲造人：输入人名/主题/甚至只是模糊需求，自动深度调研 → 思维框架提炼 → 生成可运行的人物 Skill。
+
+- 两种入口：明确人名 → 直接蒸馏；模糊需求 → 诊断推荐 → 再蒸馏
+- 触发词：「造skill」「蒸馏XX」「女娲」「造人」「XX的思维方式」「做个XX视角」「更新XX的skill」
+- **上游同步**：上游更新后重新拷贝 `plugins/huashu-nuwa/skills/huashu-nuwa/` 内容并同步更新 marketplace.json 版本号
+
+### huashu-art-motion（v1.0.0，vendored 自第三方）
+
+> 来源：[alchaincyf/huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion)（MIT，上游 commit `9ff5933`，2026-10-10）
+
+艺术与视频动画：拆解复刻动画；代码画 35 种艺术风格并让画活；9 种解说动画语法，8 种可按口播参数渲片段。
+
+- 含口播整片参考代码及框景检查；人用 AI 生帧
+- 可选已有录音、系统声音与语音复刻，按需配置
+- `scripts/` 内含渲染管线（analyze / deliver / engine / film_gate 等）
+- **上游同步**：上游更新后重新拷贝 `plugins/huashu-art-motion/skills/huashu-art-motion/` 内容并同步更新 marketplace.json 版本号
+
+### huashu-design（v1.0.0，vendored 自第三方）
+
+> 来源：[alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design)（MIT，上游 commit `0830494`，2026-09-22）
+
+花叔 Design：用 HTML 做高保真原型、幻灯片、动画、可视化与专家评审。
+
+- 任何新设计 100% 先出三个方向初稿给用户选（指定风格/品牌也不豁免），选定后才执行
+- 触发词：做原型、PPT、幻灯片、动画、设计风格、评审、做个HTML页面、UI mockup、导出MP4/GIF
+- 生产级 Web App / 需后端的系统不适用
+- **上游同步**：上游更新后重新拷贝 `plugins/huashu-design/skills/huashu-design/` 内容并同步更新 marketplace.json 版本号
+
 ## 安装
 
 **Gravitas / Claude Code Marketplace：**
@@ -55,6 +87,9 @@ andrewchay/gravitas-skills
 ```bash
 npx skills add andrewchay/gravitas-skills@client-need-distillation
 npx skills add andrewchay/gravitas-skills@ste-writing
+npx skills add andrewchay/gravitas-skills@huashu-nuwa
+npx skills add andrewchay/gravitas-skills@huashu-art-motion
+npx skills add andrewchay/gravitas-skills@huashu-design
 ```
 
 ## 目录结构
@@ -65,9 +100,18 @@ npx skills add andrewchay/gravitas-skills@ste-writing
 │   ├── ste-writing/                          # Claude plugin 布局
 │   │   ├── .claude-plugin/plugin.json
 │   │   └── skills/ste-writing/SKILL.md
-│   └── client-need-distillation/
+│   ├── client-need-distillation/
+│   │   ├── .claude-plugin/plugin.json
+│   │   └── skills/client-need-distillation/SKILL.md
+│   ├── huashu-nuwa/                          # vendored 自 alchaincyf/nuwa-skill
+│   │   ├── .claude-plugin/plugin.json
+│   │   └── skills/huashu-nuwa/SKILL.md
+│   ├── huashu-art-motion/                    # vendored 自 alchaincyf/huashu-art-motion
+│   │   ├── .claude-plugin/plugin.json
+│   │   └── skills/huashu-art-motion/SKILL.md
+│   └── huashu-design/                        # vendored 自 alchaincyf/huashu-design
 │       ├── .claude-plugin/plugin.json
-│       └── skills/client-need-distillation/SKILL.md
+│       └── skills/huashu-design/SKILL.md
 ├── ste-writing/SKILL.md                      # skills.sh 布局（canonical 副本）
 └── client-need-distillation/SKILL.md         # skills.sh 布局（canonical 副本）
 ```
